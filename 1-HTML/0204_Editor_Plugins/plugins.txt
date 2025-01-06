@@ -1,0 +1,3 @@
+Baixar no Visual Studio Code 
+- Live Server 
+- Prettier
