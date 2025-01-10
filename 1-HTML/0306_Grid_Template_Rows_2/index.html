@@ -38,8 +38,20 @@
             border-radius: 4px;
         }
         /* Estilo Gerais */
-        .grid{
+        .grid {
             display: grid;
+            gap: 20px;
+            grid-template-columns: repeat(2, 1fr);
+        }
+        .titulo{
+            grid-column: 1 / -1;
+            text-align: center;
+        }
+        .info{
+            display: grid;
+            grid-column: 2;
+            place-self: start;
+            place-items: start;
             gap: 20px;
         }
     </style>
@@ -47,10 +59,12 @@
 <body>
     <section class="grid">
         <h1 class="titulo">Nimbus Stark</h1>
-        <span class="preco">R$ 39,99</span>
         <img src="img/bicicleta.jpg" alt="bicicleta" class="foto">
-        <p class="descricao">A Nimbus Stark e a melhor Bikcraft ja criada pela nossa equipe. Ela vem equipada com os melhores acessorios, o que garante maior velocidade.</p>
-        <a href="#" class="comprar">Comprar</a>
+        <div class="info">
+            <span class="preco">R$ 39,99</span>
+            <p class="descricao">A Nimbus Stark e a melhor Bikcraft ja criada pela nossa equipe. Ela vem equipada com os melhores acessorios, o que garante maior velocidade.</p>
+            <a href="#" class="comprar">Comprar</a>
+        </div>
     </section>
 </body>
 </html>

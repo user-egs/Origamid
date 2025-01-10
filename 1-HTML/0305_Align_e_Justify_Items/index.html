@@ -6,7 +6,7 @@
     <title>Document</title>
     <style>
         /* Estilo Gerais */
-        *{
+        body{
             font-family: Arial, Helvetica, sans-serif;
             margin: 40px;
         }
@@ -38,6 +38,29 @@
             border-radius: 4px;
         }
         /* Estilo Gerais */
+        .grid{
+            display: grid;
+            gap: 20px;
+            grid-template-columns: 1fr 1fr;
+        }
+        .titulo{
+            grid-column: 2;
+            text-align:  right;
+        }
+        .preco{
+            grid-column: 3;
+            place-self: start end;
+        }
+        .foto {
+            grid-column:span 3 ;
+        }
+        .descricao{
+            text-align: right;
+        }
+        .comprar{
+           align-self: start;
+           text-align: center;
+        }
     </style>
 </head>
 <body>
